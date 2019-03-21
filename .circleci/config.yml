@@ -5,6 +5,10 @@ jobs:
       - image: 'microsoft/dotnet:2.1-sdk'
         environment:
           DEBIAN_FRONTEND: "noninteractive"
+    general:
+      branches:
+        only:
+          - my-work # list of branches to build
     steps:
       - checkout
       - run:
